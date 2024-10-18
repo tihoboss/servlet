@@ -8,7 +8,9 @@ import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class PostRepository {
   private final ConcurrentHashMap<Long, Post> posts;
   private final Lock idLock;
